@@ -6,14 +6,14 @@
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="/javascript/support.js"></script>
   <script src="/javascript/application.js"></script>
-  <title>Motivational Posters</title>
+  <title>The Captioner</title>
 </head>
 <body>
   <header>
-    <h1>Motivational Posters</h1>
+    <h1>Go on. Amuse yourself.</h1>
   </header>
   <section id="select-image">
-    <h2>Step1. Select an image</h2>
+    <h2>Step 1. Select an image</h2>
     <p>Enter the keyword to search for images</p>
     <input id="search-term" type="text">
     <button id="go-search">Go!</button>
@@ -21,6 +21,52 @@
     </div>
     <div id="branding">
     </div>
+  </section>
+  <section id="add-text">
+    <h2>Step 2. Add some text</h2>
+    <input id="text" type="text" value="Curiosity is one of the great secrets of happiness">
+  </section>
+  <section id="style-image">
+    <h2>Step 3. And style it!</h2>
+    <div id="workspace">
+      <p id="caption"></p>
+    </div>
+    <div id="controls">
+      Left: <input type="number" value="10" id="left">
+      Top: <input type="number" value="10" id="top">
+      Width: <input type="number" value="400" id="width">
+      Size: <input type="number" value="32" id="size">
+      Colour: <select id="colour">
+          <option>red</option>
+          <option>green</option>
+          <option>white</option>
+          <option>black</option>
+          <option>blue</option>
+          <option>yellow</option>
+          <option>gray</option>
+          <option>orange</option>
+        </select>
+        Align: <select id="align">
+          <option>left</option>
+          <option>right</option>
+          <option>top</option>
+          <option>bottom</option>
+        </select>
+    </div>
+    <div id="twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="I built a 'Motivational Posters' page today here at @makersacademy!">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+    <footer>
+      <a href="http://www.makersacademy.com/"><img src="http://assets.makersacademy.com/images/logo/ma-wordmark-red.png"></a>
+      <div>
+        I built this page using the free wifi at the Barbican Center, London, for the precourse at
+        <a href="http://www.makersacademy.com">Makers Academy, a highly selective 12 week coding course in London</a>. (October 5th 2015)
+      </div>
+      <div>
+        This page uses Google Image search, Ruby, Sinatra, Javascript, jQuery, HTML and CSS.
+      </div>
+    </footer>
   </section>
 </body>
 </html>
