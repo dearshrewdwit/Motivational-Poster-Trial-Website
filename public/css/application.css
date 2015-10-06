@@ -24,13 +24,29 @@ section {
   text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
-}
 #go-search {
+   background: #3d3d3d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#7a8485), to(##3d3d3d));
+   background: -webkit-linear-gradient(top, #7a8485, ##3d3d3d);
+   background: -moz-linear-gradient(top, #7a8485, ##3d3d3d);
+   background: -ms-linear-gradient(top, #7a8485, ##3d3d3d);
+   background: -o-linear-gradient(top, #7a8485, ##3d3d3d);
+   padding: 7px 7px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   color: white;
+   font-size: 12px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
 }
-
-#go-search:hover  {
-  background-color:#fafafa;
-  color:#207cca;
+#go-search:hover {
+   background: #1c3545;
+   color: #d4e6ff;
+}
+#go-search:active {
+   background: #1b435e;
 }
 
 #select-image {
@@ -42,6 +58,7 @@ section {
   border: 1px solid black;
   margin: 5px;
   box-shadow: 1px 0 3px rgba(0,0,0, 0.3);
+  border-radius: 25px;
 }
 
 #search-results img:hover {
@@ -62,7 +79,7 @@ section {
 #add-text input {
   width: 200px;
   height: 18px;
-  text-align: center;
+  text-align: left;
 }
 
 input, button {
@@ -108,6 +125,11 @@ input, button {
 
 input[type="number"] {
   width: 50px;
+}
+
+#social span {
+  margin: 5px;
+  bottom: -1px;
 }
 
 footer {
