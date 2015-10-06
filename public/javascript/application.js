@@ -2,6 +2,12 @@ $(document).on('click', '#go-search', function() {
   findImagesOnGoogle({keywords: $('#search-term').val(), container: '#search-results'})
 });
 
+$(document).keypress(function(event) {
+    if(event.which == 13){
+      findImagesOnGoogle({keywords: $('#search-term').val(), container: '#search-results'});
+    };
+});
+
 $(document).on('click', '#search-results img', function() {
   var url = $(this).data('url');
   $("#workspace img").remove();
