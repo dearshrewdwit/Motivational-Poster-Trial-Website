@@ -1,4 +1,4 @@
-![current heroku version](https://intense-ravine-2500.herokuapp.com)
+[current heroku version](https://intense-ravine-2500.herokuapp.com)
 
 # Building a Motivation Poster Website in a weekend!
 
